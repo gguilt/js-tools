@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letterizer</title>
+</head>
+
+<body>
+    <input type="text" id="sentence" />
+    <p id="output">Hello</p>
+
+    <script>
+        const sentenceInput = document.getElementById("sentence");
+        const output = document.getElementById("output");
+
+        sentenceInput.addEventListener('change', (event) => {
+            output.innerHTML = [...sentenceInput.value];
+        });
+    </script>
+</body>
+
+</html>
